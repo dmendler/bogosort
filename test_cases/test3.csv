@@ -1,0 +1,10 @@
+c, 2, Simple Test Case without Hamiltonian Circuit
+p, u, 4, 4
+v, 1
+v, 2
+v, 3
+v, 4
+e, 1, 2
+e, 2, 3
+e, 3, 4
+e, 1, 4

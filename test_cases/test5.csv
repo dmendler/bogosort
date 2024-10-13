@@ -1,0 +1,10 @@
+c, 4, Non-Hamiltonian Graph with Disconnected Vertices
+p, d, 5, 3
+v, 1
+v, 2
+v, 3
+v, 4
+v, 5
+e, 1, 2
+e, 3, 4
+e, 4, 5

@@ -1,0 +1,8 @@
+c, 5, Complete Graph with Hamiltonian Circuit
+p, u, 3, 3
+v, 1
+v, 2
+v, 3
+e, 1, 2
+e, 2, 3
+e, 3, 1
