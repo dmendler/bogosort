@@ -1,0 +1,3 @@
+Hamiltonian Circuit: 1 -> 2 -> 3 -> 4 -> 5 -> 1
+Time to read graph: 0.000087s
+Time to find path: 9.29832e-06s

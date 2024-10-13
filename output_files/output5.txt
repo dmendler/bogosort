@@ -1,0 +1,3 @@
+No Hamiltonian Circuit found.
+Time to read graph: 0.000108s
+Time to find path: 7.15256e-06s
