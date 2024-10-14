@@ -20,7 +20,6 @@ v, 17
 v, 18
 v, 19
 v, 20
-# Hamiltonian Circuit edges, but no direct sequential order
 e, 1, 5
 e, 5, 9
 e, 9, 13
@@ -41,7 +40,6 @@ e, 7, 11
 e, 11, 15
 e, 15, 19
 e, 19, 1
-# Additional complex edges that don't contribute to the Hamiltonian circuit
 e, 3, 10
 e, 7, 14
 e, 11, 18
