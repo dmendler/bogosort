@@ -50,47 +50,30 @@ def find_circuit(graph: Graph, path: list[int], visited: set[int]) -> list[int]:
     if len(path) == len(graph) and path[0] in graph[path[-1]]:
         return path + [path[0]]
     
-    for neighbor in graph[path[-1]]:
+    for neighbor in graph[path[-1]]: # Check all neighbors
         if neighbor in visited:
             continue
         
-        visited.add(neighbor)
-        path.append(neighbor)
+        visited.add(neighbor) # Add neighbor to visited
+        path.append(neighbor) # And add neighbor to path
         if result := find_circuit(graph, path, visited):
             return result
-        path.pop()
-        visited.remove(neighbor)
-    
-    return []
-
-def find_circuit(graph: Graph, path: list[int], visited: set[int]) -> list[int]:
-    ''' Find a Hamiltonian Cycle using DFS. '''
-    if len(path) == len(graph) and path[0] in graph[path[-1]]:
-        return path + [path[0]]
-    
-    for neighbor in graph[path[-1]]:
-        if neighbor in visited:
-            continue
-        
-        visited.add(neighbor)
-        path.append(neighbor)
-        if result := find_circuit(graph, path, visited):
-            return result
-        path.pop()
-        visited.remove(neighbor)
+        path.pop() # Remove from path if no circuit is found
+        visited.remove(neighbor) # And remove from visited
     
     return []
 
 def main() -> None:
     '''  Time reading graph, call functions to find ciruit, and print results. '''
-    start_t = time()
+    start_t = time() # Time read in graph
     graph = read_graph()
     read_t = time() - start_t
 
-    start_t = time()
+    start_t = time() # Time to find hamiltonian ciruit
     circuit = find_circuit(graph, [1], set([1]))
     search_t = time() - start_t
     
+    # Print results
     if circuit:
         print('Hamiltonian Circuit:', ' -> '.join(map(str, circuit)))
     else:
