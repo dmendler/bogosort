@@ -1,0 +1,49 @@
+c, 1, Irregular Complex Test Case with 20 Vertices
+p, d, 20, 25
+v, 1
+v, 2
+v, 3
+v, 4
+v, 5
+v, 6
+v, 7
+v, 8
+v, 9
+v, 10
+v, 11
+v, 12
+v, 13
+v, 14
+v, 15
+v, 16
+v, 17
+v, 18
+v, 19
+v, 20
+# Hamiltonian Circuit edges, but no direct sequential order
+e, 1, 5
+e, 5, 9
+e, 9, 13
+e, 13, 17
+e, 17, 20
+e, 20, 2
+e, 2, 6
+e, 6, 10
+e, 10, 14
+e, 14, 18
+e, 18, 4
+e, 4, 8
+e, 8, 12
+e, 12, 16
+e, 16, 3
+e, 3, 7
+e, 7, 11
+e, 11, 15
+e, 15, 19
+e, 19, 1
+# Additional complex edges that don't contribute to the Hamiltonian circuit
+e, 3, 10
+e, 7, 14
+e, 11, 18
+e, 5, 17
+e, 12, 9
