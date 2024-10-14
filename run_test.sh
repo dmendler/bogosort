@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Loop through test cases 1 to 11
-for i in {1..11}
+# Loop through test cases 1 to 12
+for i in {1..12}
 do
     # Define input and output file paths
     input_file="test_cases/test${i}.csv"
