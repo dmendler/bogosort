@@ -1,8 +1,9 @@
-**Danny Mendler**
+**Project 01 for Theory of Computing**
 
-**dmendler**
+Danny Mendler
 
-###Project 01 for Theory of Computing
+dmendler
+
 
 Usage if want to run ham_circuit_bogosort individually:
 
