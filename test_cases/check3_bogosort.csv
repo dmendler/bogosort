@@ -1,0 +1,7 @@
+c, 3, Simple Test Case, No Ciruit
+p, u, 3, 2
+v, 1
+v, 2
+v, 3
+e, 1, 2
+e, 1, 3
